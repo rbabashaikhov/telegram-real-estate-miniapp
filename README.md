@@ -141,3 +141,15 @@ Backend покрывает matching, budget bounds, scoring, temperature, score 
 - Seller flow не делает automated valuation
 - Просмотры не синхронизируются с календарём агента
 - Production deploy на общий VPS — отдельный этап
+
+## Future: rental variation (not in this release)
+
+Отдельная rental-вертикаль не входит в текущий продукт. Возможное расширение:
+
+- менеджер добавляет объект
+- статусы AVAILABLE / RESERVED / RENTED
+- фото, цена, район, комнаты, площадь, условия
+- фильтры, избранное, контакт менеджера
+- заявка на просмотр и лид на объект
+
+Сейчас Mini App остаётся buyer qualification + matching + viewing funnel, не каталогом аренды.

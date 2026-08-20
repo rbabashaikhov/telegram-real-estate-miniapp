@@ -60,6 +60,9 @@ export function PropertyPage() {
 
   return (
     <div className="page property-page">
+      <Link className="back-link" to="/matches">
+        ← Назад
+      </Link>
       <div className="gallery" style={{ backgroundImage: `url(${cover})` }}>
         <div className="gallery-nav">
           {property.gallery.map((_, index) => (

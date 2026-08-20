@@ -234,11 +234,38 @@ input, select, textarea {
 .timeline time { color: var(--muted); margin-right: 8px; }
 .admin-login { max-width: 360px; margin: 80px auto; }
 
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 4px 0;
+  color: var(--navy);
+  text-decoration: none;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
 .demo-chrome {
   display: flex; gap: 10px; align-items: center; margin-bottom: 12px; font-size: 13px;
 }
 .demo-badge { background: var(--navy); color: var(--accent); border-radius: 99px; padding: 4px 8px; }
 .demo-chrome-link { color: var(--navy); background: none; border: 0; font: inherit; text-decoration: underline; }
+.demo-chrome-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  min-height: 40px;
+  padding: 8px 14px;
+  border: 1px solid var(--navy);
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none;
+  background: transparent;
+  color: var(--navy);
+  white-space: nowrap;
+}
 .demo-sheet-backdrop, .demo-tour-layer {
   position: fixed; inset: 0; z-index: 50;
 }

@@ -15,8 +15,13 @@ function AdminShell({
   return (
     <div className="admin-shell">
       <aside>
-        <p className="eyebrow">{readOnly ? 'Sales view' : 'Норд Эстейт'}</p>
+        <p className="eyebrow">{readOnly ? 'Кабинет менеджера · только чтение' : 'Норд Эстейт'}</p>
         <h1>Менеджер</h1>
+        {readOnly && (
+          <Link className="demo-chrome-cta" to="/" style={{ margin: '12px 0' }}>
+            Открыть клиентское приложение
+          </Link>
+        )}
         <nav>
           <NavLink to={prefix}>Dashboard</NavLink>
           <NavLink to={`${prefix}/leads`}>Лиды</NavLink>
